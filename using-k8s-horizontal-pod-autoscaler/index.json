@@ -1,0 +1,47 @@
+{
+  "title": "Using Kubernetes Horizontal Pod Autoscaler",
+  "description": "Scenario 1: Introduction to K8S HPA",
+  "difficulty": "intermediate",
+  "time": "17 minutes",
+  "details": {
+    "steps": [{
+      "title": "Step 1 - Installing the Kubernetes Metric Server",
+      "text": "step1.md"
+    },
+      {
+        "title": "Step 2 - Creating the Single Pod Deployment to be Autoscaled",
+        "text": "step2.md"
+      }
+    ,
+      {
+        "title": "Step 3 - Stressing the Pod in the Web Server Deployment",
+        "text": "step3.md"
+      }
+    ,
+      {
+        "title": "Step 4 - Applying Horizontal Pod Autoscaling to Alleviate CPU Stress",
+        "text": "step4.md"
+      }
+    ,
+      {
+        "title": "Step 5 - Viewing the HPA in Action",
+        "text": "step5.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": { "host01": [ {"file": "ping-02.sh", "target": "/root", "chmod": "+x"}]}
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nType 'printenv' to do a basic interaction\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster-running"
+  }
+}
